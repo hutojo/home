@@ -1,0 +1,387 @@
+/* Code tidied up by ScrapBook */
+html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, dl, dt, dd, ol, ul, li, form, label, table, caption, tbody, tfoot, thead, tr, th, td, footer, header, menu, nav, span { margin: 0px; padding: 0px; border: 0px none; outline: 0px none; font: inherit; vertical-align: baseline; text-decoration: none; }
+a, a:hover, a:active { outline: medium none; }
+a:hover { text-decoration: underline; }
+* a, * * a { font-family: inherit; font-size: inherit; font-weight: inherit; text-decoration: none; }
+img { border: medium none; }
+li { list-style: outside none none; }
+textarea { resize: none; }
+input[type="button"], input[type="submit"] { cursor: pointer; }
+.decorness:hover { text-decoration: none; }
+.fl { float: left; }
+.fr { float: right; }
+.alignLeft { text-align: left; }
+.alignCenter { text-align: center; }
+.alignRight { text-align: right; }
+.clear { clear: both; }
+.block { display: block; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.overflow { overflow: hidden; }
+.pointer { cursor: pointer; }
+.hidden { display: none !important; }
+.mb5 { margin-bottom: 5px; }
+.mb { margin-bottom: 10px; }
+.mb7 { margin-bottom: 7px; }
+.mb12 { margin-bottom: 12px; }
+.mb15 { margin-bottom: 15px; }
+.mb20 { margin-bottom: 20px; }
+.mb25 { margin-bottom: 25px; }
+.mb30 { margin-bottom: 30px; }
+.mb40 { margin-bottom: 40px; }
+.ml2 { margin-left: 2px; }
+.ml3 { margin-left: 3px; }
+.ml5 { margin-left: 5px; }
+.ml20 { margin-left: 20px; }
+.mr3 { margin-right: 3px; }
+.mr5 { margin-right: 5px; }
+.mr6 { margin-right: 6px; }
+.mr { margin-right: 10px; }
+.mr12 { margin-right: 12px; }
+.mr20 { margin-right: 20px; }
+.normal { font-weight: 400; }
+.bold { font-weight: 700; }
+.uppercase { text-transform: uppercase; }
+.underline { text-decoration: underline; }
+.fs11 { font-size: 11px; }
+.fs12 { font-size: 12px; }
+.fs14 { font-size: 14px; }
+.fs15 { font-size: 15px; }
+.fs18 { font-size: 18px; }
+.fs22 { font-size: 22px; }
+.fs24 { font-size: 24px; }
+.fs30 { font-size: 30px; }
+.w40 { width: 40px; }
+.w95 { width: 95px; }
+.w110 { width: 110px; }
+.w150 { width: 150px; }
+.w240 { width: 240px; }
+.w300 { width: 300px; }
+.w320 { width: 320px; }
+.w400 { width: 400px; }
+@font-face {
+  font-family: "opensans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("OpenSansBold"), local("OpenSansBold"), url("openSansBold.eot") format("embedded-opentype"), url("openSansBold.woff") format("woff");
+}
+@font-face {
+  font-family: "opensans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("OpenSans"), local("OpenSans"), url("openSans.eot") format("embedded-opentype"), url("openSans.woff") format("woff");
+}
+.colorDef { color: rgb(102, 102, 102); }
+.white { color: rgb(255, 255, 255); }
+.dirtyWhite { color: rgb(246, 244, 234); }
+.color1 { color: rgb(119, 102, 84); }
+.color2 { color: rgb(255, 162, 0); }
+.color3 { color: rgb(155, 186, 31); }
+.color333 { color: rgb(51, 51, 51); }
+.color999 { color: rgb(153, 153, 153); }
+body { background: rgb(255, 255, 255) none repeat scroll 0% 0%; color: rgb(102, 102, 102); font-size: 12px; font-family: Arial,helvetica neue,Helvetica,sans-serif; }
+.openSans { font-family: OpenSans,sans-serif; }
+.sprite { background: transparent url("sprite.png") no-repeat scroll 0% 0%; }
+.wrapper { width: 1000px; margin: auto; position: relative; }
+.pagePadd { padding: 0px 10px; }
+.loginPadd { padding: 0px 30px; background: rgb(246, 244, 234) none repeat scroll 0% 0%; border-bottom: 1px solid rgb(225, 224, 204); height: 30px; }
+.login { text-align: right; height: 30px; line-height: 30px; border-bottom: 1px solid rgb(225, 224, 204); background: rgb(246, 244, 234) none repeat scroll 0% 0%; font-size: 14px; }
+.login .socialHolder { float: left; padding-top: 5px; line-height: 21px; height: 21px; }
+.login .socialHolder .item { display: inline-block; vertical-align: top; margin-right: 5px; }
+.myCulinary { background: rgba(0, 0, 0, 0) url("chefsHat.png") no-repeat scroll 0px center; font-family: OpenSans,sans-serif; font-weight: 700; color: rgb(202, 53, 53); margin-right: 18px; padding-left: 31px; display: inline-block; }
+.header { height: 157px; position: relative; margin-bottom: 10px; width: 100%; }
+.logo { background: rgba(0, 0, 0, 0) url("sprite.png") no-repeat scroll 0px -160px; display: block; width: 243px; height: 93px; position: absolute; left: 23px; top: 12px; }
+.searchBox { position: absolute; left: 675px; top: 18px; }
+.searchFilters { margin-bottom: 6px; }
+.searchFilters .item { margin-right: 3px; }
+.searchFilters .item-left, .searchFilters .item-right { background: rgba(0, 0, 0, 0) url("smallGray.png") no-repeat scroll 0px 0px; float: left; height: 18px; line-height: 18px; font-size: 11px; color: rgb(119, 102, 84); cursor: pointer; }
+.searchFilters .selected .item-left, .searchFilters .selected .item-right, .searchFilters .item:hover .item-left, .searchFilters .item:hover .item-right { background: rgba(0, 0, 0, 0) url("smallOrange.png") no-repeat scroll 0px 0px; }
+.searchFilters .item-left { width: 8px; }
+.searchFilters .item-right, .searchFilters .selected .item-right, .searchFilters .item:hover .item-right { background-position: right -18px; padding-right: 8px; }
+.searchFilters .selected .item-right, .searchFilters .item:hover .item-right { color: rgb(255, 255, 255); }
+.searchFilters .selected .item-right { font-weight: 700; }
+.searchFilters .tongue { display: none; }
+.searchFilters .selected .tongue { display: block; background: rgba(0, 0, 0, 0) url("sprite.png") no-repeat scroll -278px -70px; width: 7px; height: 4px; position: absolute; top: 100%; left: 50%; margin-left: -3px; }
+.searchField { background-position: -244px -214px; width: 300px; height: 44px; }
+.searchField input[type="text"] { width: 225px; padding: 0px 15px; height: 33px; line-height: 36px; color: rgb(153, 153, 153); border: 0px none; background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px; margin: 5px 5px 0px; float: left; outline: medium none; }
+.searchField input[type="submit"] { background-position: -698px -40px; border: medium none; padding: 0px; width: 30px; height: 33px; margin-top: 5px; }
+.searchField input[type="submit"]:hover { background-position: -698px -73px; }
+.navigation { background-position: 0px 0px; position: absolute; bottom: 0px; left: 0px; height: 35px; padding-top: 5px; width: 100%; }
+.nav-l { float: left; width: 680px; }
+.nav-r { float: left; width: 300px; position: relative; height: 100%; }
+.nav-l .padd, .nav-r .padd { overflow: hidden; }
+.nav-l .padd { padding-left: 7px; }
+.nav-r .padd { padding-left: 21px; }
+.nav-r .padd { padding-top: 4px; }
+.navigation a { color: rgb(246, 244, 234); font-size: 16px; font-weight: 700; text-transform: uppercase; }
+.navigation .nav-l a:hover { text-decoration: none; }
+.nav-l .item { height: 30px; float: left; cursor: pointer; }
+.nav-l .leftBack, .nav-l .rightBack { float: left; height: 30px; line-height: 30px; }
+@-moz-document url-prefix("") {
+  .nav-l .leftBack, .nav-l .rightBack { line-height: 30px; }
+}
+.nav-l .leftBack { width: 4px; }
+.nav-l .item:hover .leftBack, .nav-l .item:hover .rightBack { background: rgba(0, 0, 0, 0) url("navHover.png") no-repeat scroll 0px 0px; }
+.nav-l .item:hover .rightBack { background-position: right -30px; }
+.nav-l .item .rightBack { padding-right: 4px; }
+.navDivider { background: rgba(0, 0, 0, 0) url("navDivider.png") no-repeat scroll 0px 0px; width: 1px; height: 20px; margin: 0px 5px; float: left; position: relative; top: 5px; }
+.inHome { background: rgba(0, 0, 0, 0) url("sprite.png") no-repeat scroll -863px -66px; width: 125px; height: 62px; position: absolute; bottom: 0px; right: 16px; }
+.leftCol { float: left; width: 660px; margin-right: 20px; }
+.rightCol { float: left; width: 300px; }
+.advSearch { margin-bottom: 23px; }
+.advSearchTop { background: rgba(0, 0, 0, 0) url("sprite.png") no-repeat scroll 0px -86px; height: 5px; }
+.advSearchBottom { background: rgba(0, 0, 0, 0) url("sprite.png") no-repeat scroll 0px -91px; height: 5px; }
+.advSearchMiddleGreen, .advSearchMiddleGray { padding: 0px 10px; }
+.advSearchMiddleGreen { background: rgb(155, 186, 31) none repeat scroll 0% 0%; padding-top: 5px; padding-bottom: 10px; overflow: hidden; }
+.advSearchMiddleGray { background: rgb(246, 244, 234) none repeat scroll 0% 0%; padding-top: 10px; padding-bottom: 5px; overflow: hidden; height: 30px; line-height: 30px; }
+.advSearchMiddleGreen .item { background: rgba(0, 0, 0, 0) url("advSearchDivider.png") repeat-y scroll right top; float: left; width: 200px; padding-right: 10px; margin-right: 10px; overflow: hidden; }
+.advSearchMiddleGreen .item.last { margin-right: 0px; padding: 0px; background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px; }
+.textInputLeft, .textInputRight { background: rgba(0, 0, 0, 0) url("inputText.png") no-repeat scroll 0px 0px; }
+.textInputLeft { float: left; width: 5px; height: 30px; overflow: hidden; }
+.textInputRight { float: left; background-position: right -30px; padding: 0px 10px 0px 5px; font-size: 12px; }
+.textInputRight input { border: 0px none; background: rgba(0, 0, 0, 0) none repeat scroll 0px center; padding: 0px; float: left; height: 30px; line-height: 30px; color: rgb(153, 153, 153); outline: medium none; }
+.advSearch .textInputRight input { width: 180px; }
+select.styledSelect { position: relative; z-index: 10; width: 200px !important; height: 30px !important; line-height: 30px; padding: 0px; }
+span.selectSpan { position: absolute; bottom: 0px; float: left; left: 0px; width: 165px; height: 30px; line-height: 30px; text-indent: 10px; cursor: default; z-index: 1; overflow: hidden; }
+.styledSelectHolder { background: rgba(0, 0, 0, 0) url("sprite.png") no-repeat scroll -400px -96px; }
+.advSearchMinutes { background: rgba(0, 0, 0, 0) url("sprite.png") no-repeat scroll -834px -40px; font-size: 14px; cursor: pointer; width: 29px; height: 29px; float: left; text-align: center; margin-right: 4px; }
+.advSearchMinutes.selected, .advSearchMinutes:hover { color: rgb(246, 244, 234); background-position: -834px -69px; }
+@media not all {
+  .advSearchMinutes { width: 28px; }
+}
+.advSearchSubmit { background-position: -278px -40px; width: 140px; height: 30px; float: right; border: 0px none; padding: 0px; }
+.featuredBorder, .thumbHolder { border: 1px solid rgb(225, 224, 204); }
+.thumbHolder a { display: block; overflow: hidden; position: relative; }
+.featuredLabel, .slider-6 .sliderList li .info, .slider-1 .sliderList li .info { background: rgba(0, 0, 0, 0) url("dot1.png") repeat scroll 0px 0px; bottom: 0px; left: 0px; width: 100%; }
+.featuredLabel .padd, .slider-1 .sliderList li .info .padd, .slider-6 .sliderList li .info .padd { padding: 10px 20px; overflow: hidden; }
+.icons { background: rgba(0, 0, 0, 0) url("icons.png") no-repeat scroll 0px 0px; position: relative; padding-left: 20px; margin-left: 4px; color: rgb(102, 102, 102); font-size: 11px; height: 15px; display: inline-block; }
+.icons:hover { text-decoration: none; }
+.icons.comments { background-position: 0px 1px; }
+.featuredBottom { -moz-user-select: none; background: rgba(0, 0, 0, 0) url("sprite.png") no-repeat scroll 0px -96px; height: 32px; line-height: 32px; overflow: hidden; }
+.featuredBottom .tabs { padding-top: 7px; -moz-user-select: none; cursor: default; }
+.featuredBottom .prev, .featuredBottom .next, .featuredBottom .dot, .moreFromSavages .prev, .moreFromSavages .next, .moreFromSavages .dot, .moreFromSavages2 .prev, .moreFromSavages2 .next, .moreFromSavages2 .dot, .box-funVideo-right .prev, .box-funVideo-right .next, .box-funVideo-right .dot { cursor: pointer; display: inline-block; }
+.featuredBottom .prev, .featuredBottom .next, .moreFromSavages .prev, .moreFromSavages .next, .moreFromSavages2 .prev, .moreFromSavages2 .next, .box-funVideo-right .prev, .box-funVideo-right .next, .feast .prev, .feast .next { background: rgba(0, 0, 0, 0) url("sprite.png") no-repeat scroll -728px -40px; width: 13px; height: 20px; cursor: pointer; }
+.featuredBottom .next, .moreFromSavages .next, .moreFromSavages2 .next, .box-funVideo-right .next, .feast .next { background-position: -741px -40px; }
+.featuredBottom .prev:hover, .feast .prev:hover, .moreFromSavages .prev:hover, .moreFromSavages2 .prev:hover, .box-funVideo-right .prev:hover { background-position: -753px -40px; }
+.featuredBottom .next:hover, .feast .next:hover, .moreFromSavages .next:hover, .moreFromSavages2 .next:hover, .box-funVideo-right .next:hover { background-position: -766px -40px; }
+.featuredBottom .dot, .moreFromSavages .dot, .moreFromSavages2 .dot, .box-funVideo-right .dot { background: rgba(0, 0, 0, 0) url("sprite.png") no-repeat scroll -332px -70px; width: 12px; height: 12px; margin: 0px 1px; position: relative; top: -4px; }
+.featuredBottom .dot.selected, .moreFromSavages .dot.selected, .moreFromSavages2 .dot.selected, .box-funVideo-right .dot.selected { background-position: -344px -70px; }
+.time { background: rgba(0, 0, 0, 0) url("sprite.png") no-repeat scroll -728px -60px; bottom: 0px; left: 0px; width: 64px; height: 23px; overflow: hidden; line-height: 25px; text-indent: 22px; color: rgb(51, 51, 51); font-size: 11px; }
+.newRecipes .item a:hover, .homeAricles .item a:hover, .seasonsProducts .subject .title:hover, .greenHover:hover { color: rgb(155, 186, 31); }
+.orangeHover:hover { color: rgb(255, 162, 0); }
+.homeAricles .thumbHolder a, .homeWide .thumbHolder a, .grayBox.halfBox .thumbHolder a, .moreNews .thumbHolder a, .articleListItem .thumbHolder a, .recipeList .thumbHolder a, .favouritesList .thumbHolder a, .promotionList .thumbHolder a, .moreRecipes .thumbHolder a { width: 148px; height: 111px; }
+.grayBox .t, .grayBox .b { background: rgb(246, 244, 234) none repeat scroll 0% 0%; height: 5px; margin: 0px 5px; }
+.grayBox .tl, .grayBox .tr, .grayBox .bl, .grayBox .br { background: rgba(0, 0, 0, 0) url("grayBox.png") no-repeat scroll 0px 0px; }
+.grayBox .tr { background-position: right -5px; }
+.grayBox .bl { background-position: 0px -10px; }
+.grayBox .br { background-position: right -15px; }
+.grayBox .boxContent { background: rgb(246, 244, 234) none repeat scroll 0% 0%; overflow: hidden; }
+.grayBox.halfBox .title, .moreInfo .title, .products .title, .savagesCommon-right .title, .no-time-heading-right { height: 40px; line-height: 40px; border-bottom: 1px solid rgb(225, 224, 204); margin-bottom: 12px; }
+.title a:hover { text-decoration: none; }
+.greenDotList .item { background: rgba(0, 0, 0, 0) url("greenDot.png") no-repeat scroll 0px center; display: block; padding-left: 12px; }
+.footer { background: rgb(143, 129, 115) none repeat scroll 0% 0%; padding: 36px 0px; overflow: hidden; text-align: center; }
+.footerCol { width: 200px; height: 128px; border-right: 1px solid rgb(133, 118, 103); font-size: 14px; }
+.footerCol.last { border: 0px none; }
+.footerCol .fixedWidth { width: 74px; }
+.footerCol .halfCol { width: 126px; }
+.footerRow { margin-bottom: 8px; }
+.copyRight { background: rgb(119, 102, 84) none repeat scroll 0% 0%; height: 40px; line-height: 40px; text-align: center; }
+.copyRight, .copyRight a { color: rgb(246, 244, 234); }
+.lh18 { line-height: 18px; }
+.myCulinaryFoot { display: block; background: rgba(0, 0, 0, 0) url("myCulinaryFoot.png") no-repeat scroll 0px 0px; padding-left: 30px; height: 21px; line-height: 22px; }
+.lh12 { line-height: 12px; }
+.rightPoll .item { margin-bottom: 2px; }
+.buttonOrange .l, .buttonOrange .r { background: rgba(0, 0, 0, 0) url("buttonOrange.png") no-repeat scroll 0px 0px; height: 30px; line-height: 30px; float: left; padding: 0px 18px 0px 23px; color: rgb(246, 244, 234); text-transform: uppercase; font-size: 14px; font-family: OpenSans,sans-serif; font-weight: 700; }
+.buttonOrange .r { padding: 0px; width: 5px; background-position: right -30px; }
+.commentPoll { background: rgba(0, 0, 0, 0) url("comments.png") no-repeat scroll 0px 0px; display: block; padding-left: 23px; position: relative; top: 7px; }
+@-moz-document url-prefix("") {
+  .percent { top: -4px; }
+}
+.articleIcon { background: rgba(0, 0, 0, 0) url("sprite.png") no-repeat scroll -813px -40px; display: inline-block; cursor: pointer; }
+.articleIcon.print { width: 17px; height: 16px; }
+.articleIcon.changeFont { background-position: -813px -56px; width: 21px; height: 14px; position: relative; top: -1px; }
+.socialIcon { background: rgba(0, 0, 0, 0) url("sprite.png") no-repeat scroll -291px -70px; display: block; width: 16px; height: 16px; cursor: pointer; }
+.socialIcon.tweeterIcon { background-position: -316px -70px; }
+.border-line, .border-line2 { height: 1px; font-size: 1px; }
+.border-line { border-top: 1px solid rgb(225, 224, 204); }
+.description { border-left: 1px solid rgb(225, 224, 204); border-right: 1px solid rgb(225, 224, 204); background: rgb(233, 231, 217) none repeat scroll 0% 0%; padding: 10px 20px 7px; }
+.articleImg { width: 336px; text-align: center; background: rgb(246, 244, 234) none repeat scroll 0% 0%; }
+.articleImg img { vertical-align: bottom; }
+.articleText { font-size: 14px; }
+.moreInfo .boxContent, .products .boxContent { padding: 3px 20px 0px; }
+.relatedRecipes .item { display: inline; }
+.box1 .t, .box1 .b { height: 5px; margin: 0px 5px; }
+.box1 .t, .box1 .b, .box1 .tl, .box1 .tr, .box1 .bl, .box1 .br { background: rgba(0, 0, 0, 0) url("box1.png") no-repeat scroll 0px 0px; }
+.box1 .tl { background-position: left 0px; }
+.box1 .tr { background-position: right -5px; }
+.box1 .bl { background-position: left -10px; }
+.box1 .br { background-position: right -15px; }
+.box1 .t { background-position: 0px -20px; background-repeat: repeat-x; }
+.box1 .b { background-position: 0px -25px; background-repeat: repeat-x; }
+.box1 .l, .box1 .r { background: rgba(0, 0, 0, 0) url("box1lr.png") repeat-y scroll 0px 0px; }
+.box1 .r { margin-left: 5px; padding-right: 5px; background-position: right 0px; }
+.addComment textarea { border: 0px none; width: 640px; padding: 5px; }
+.commentsList { margin-bottom: 40px; }
+.often-tabs { border-top: 1px solid rgb(225, 224, 204); border-bottom: 1px solid rgb(225, 224, 204); }
+.often-tabs .item { float: left; position: relative; cursor: pointer; }
+.often-tabs .item.first { margin-left: 0px !important; }
+.often-tabs .item.first .tongueL { display: none; }
+.often-tabs.green .item { font-weight: 700; color: rgb(155, 186, 31); }
+.often-tabs .tongue { position: absolute; width: 100%; height: 6px; bottom: -6px; left: 0px; }
+.often-tabs.orange .selected .tongue { background: rgba(0, 0, 0, 0) url("tabsTongueOrange.png") no-repeat scroll center 0px; }
+.often-tabs.green .selected .tongue { background: rgba(0, 0, 0, 0) url("tabsTongueGreen.png") no-repeat scroll center 0px; }
+.often-tabs .selected .tongueL, .often-tabs .selected .tongueR { background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; bottom: -1px; width: 2px; height: 2px; }
+.often-tabs .tongueL { left: -2px; }
+.often-tabs .tongueR { right: -2px; }
+.often-tabs .item { height: 30px; line-height: 30px; margin: 0px 12px; font-size: 14px; }
+.recipeContent .articleImg { width: 398px; position: relative; }
+.addMyCulinary { background: rgba(0, 0, 0, 0) url("sprite.png") no-repeat scroll -458px -128px; height: 30px; width: 240px; line-height: 30px; text-indent: 35px; }
+.addMyCulinary:hover { background-position: -458px -158px; }
+.chefsHatBig { background: rgba(0, 0, 0, 0) url("sprite.png") no-repeat scroll -600px -96px; width: 33px; height: 30px; }
+.addMyCulinary .chefsHatBig { position: absolute; left: -4px; top: -3px; }
+.rating .star { background: rgba(0, 0, 0, 0) url("stars.png") no-repeat scroll 0px 0px; float: left; margin-right: 4px; width: 15px; height: 13px; cursor: pointer; }
+.rating .star.full { background-position: 0px -13px; }
+.clock, .dish { background: rgba(0, 0, 0, 0) url("additionalInfo.png") no-repeat scroll 0px 0px; height: 86px; margin-bottom: 8px; }
+.clock { width: 90px; }
+.dish { background-position: 0px -86px; width: 107px; }
+.grayButton .l, .grayButton .r { background: rgba(0, 0, 0, 0) url("grayButton.png") no-repeat scroll 0px 0px; float: left; height: 30px; line-height: 30px; cursor: pointer; }
+.grayButton .l { width: 6px; }
+.grayButton .r { background-position: right -30px; padding-right: 6px; color: rgb(119, 102, 84); font-weight: 700; }
+.inputText .l, .inputText .r { background: rgba(0, 0, 0, 0) url("inputText.png") no-repeat scroll 0px 0px; height: 30px; float: left; }
+.inputText .l, .inputText2 .l { width: 5px; }
+.inputText .r { background-position: right -30px; padding-right: 5px; }
+.inputText input, .inputText2 input { float: left; border: 0px none; padding: 0px; margin: 0px; background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px; height: 30px; line-height: 30px; outline: medium none; }
+.inputText.w40 input { width: 30px; }
+.recipeCap { background: rgba(0, 0, 0, 0) url("sprite.png") no-repeat scroll -792px -40px; width: 21px; height: 18px; margin: 5px 0px 0px 3px; position: relative; }
+.recipeCap.full { background-position: -792px -58px; }
+.making .item { padding-left: 40px; min-height: 21px; height: auto !important; }
+.making .step { background: rgba(0, 0, 0, 0) url("sprite.png") no-repeat scroll -863px -40px; position: absolute; left: 0px; top: 0px; width: 26px; height: 26px; line-height: 26px; }
+.rightCollSprite { background: rgba(0, 0, 0, 0) url("rightColSprite.png") no-repeat scroll 0% 0%; }
+.rightCol .grayBox .boxContent { padding: 10px 20px 15px; overflow: visible; }
+.rightCol .grayBox .blockTitle { font-size: 18px; font-family: OpenSans,sans-serif; font-weight: 700; text-transform: uppercase; color: rgb(119, 102, 84); padding-bottom: 7px; margin-bottom: 4px; }
+.rightCol .grayBox .often-tabs.green .selected .tongue { background: rgba(0, 0, 0, 0) url("tabsTongueGreenRight.png") no-repeat scroll center top; }
+.rightCol .grayBox .often-tabs .selected .tongueL, .often-tabs .selected .tongueR { background: rgb(246, 244, 234) none repeat scroll 0% 0%; }
+.rightAddRecipe .add { display: block; width: 215px; height: 40px; background-position: -263px 0px; line-height: 40px; font-family: OpenSans,sans-serif; font-size: 18px; text-transform: uppercase; color: rgb(255, 255, 255); text-decoration: none; padding-left: 45px; margin-bottom: 7px; }
+.rightAddRecipe .add:hover { background-position: 0px 0px; }
+.rightAddRecipe .info { font-size: 12px; }
+.rightCol .grayBox .subTitle { border-bottom: 1px solid rgb(225, 224, 204); border-top: 1px solid rgb(225, 224, 204); height: 33px; line-height: 33px; font-size: 14px; font-weight: 700; color: rgb(155, 186, 31); margin-bottom: 10px; }
+.fastLinks .left { width: 120px; float: left; margin-right: 20px; }
+.fastLinks .right { width: 120px; float: left; }
+.fastLinks .itemList { position: relative; display: inline-block; padding-right: 10px; }
+.fastLinks .subMenu { position: absolute; top: 0px; left: 0px; background: rgba(0, 0, 0, 0) url("rightSubMenuTop.png") no-repeat scroll center top; padding-top: 8px; width: 192px; display: none; z-index: 100000; }
+.fastLinks .subMenu .relative { z-index: 10000; }
+.fastLinks .subMenu a { color: rgb(155, 186, 31); }
+.fastLinks .subMenu .point { background: rgba(0, 0, 0, 0) url("rightSubMenuPoint.png") no-repeat scroll right center; width: 20px; height: 10px; position: absolute; top: 50%; margin-top: -5px; left: -16px; }
+.fastLinks .subMenu .bbb { background: rgba(0, 0, 0, 0) url("rightSubMenuBottom.png") no-repeat scroll center bottom; padding-bottom: 11px; }
+.fastLinks .subMenu .ccc { background: rgba(0, 0, 0, 0) url("rightSubMenuCenter.png") repeat-y scroll center center; padding-left: 19px; padding-top: 10px; overflow: hidden; padding-bottom: 5px; }
+.useful .buttonsList .item { margin-bottom: 10px; margin-left: 10px; float: left; }
+.useful .buttonsList .item.first { margin-left: 0px; }
+.useful .buttonsList .item a { background: rgba(0, 0, 0, 0) url("usefulButton.png") no-repeat scroll 0% 0%; width: 95px; height: 30px; display: block; line-height: 30px; position: relative; padding-left: 30px; font-family: OpenSans,sans-serif; font-weight: 700; color: rgb(255, 255, 255); font-size: 13px; text-decoration: none; }
+.useful .buttonsList .item a span { background: rgba(0, 0, 0, 0) url("rightColSprite.png") no-repeat scroll 0% 0%; display: inline-block; position: absolute; width: 17px; height: 20px; left: 8px; top: 6px; }
+.useful .buttonsList .item a.calendar span { background-position: -529px 0px; }
+.useful .buttonsList .item a.calendar:hover span { background-position: -529px -20px; }
+.useful .buttonsList .item a.conv span { background-position: -547px 2px; }
+.useful .buttonsList .item a.conv:hover span { background-position: -547px -18px; }
+.useful .buttonsList .item a.dictionary span { background-position: -567px 2px; }
+.useful .buttonsList .item a.dictionary:hover span { background-position: -567px -20px; }
+.useful .buttonsList .item a.calorie span { background-position: -587px 0px; }
+.useful .buttonsList .item a.calorie:hover span { background-position: -587px -20px; }
+.rightWhiteBlock { margin-bottom: 20px; }
+.rightWhiteBlock .blockTitle { color: rgb(255, 162, 0); font-size: 18px; font-weight: 700; font-family: OpenSans,sans-serif; text-transform: uppercase; margin-bottom: 10px; }
+.fromNetwork .logos { display: inline-block; }
+.fromNetwork .logos.inews { width: 62px; height: 16px; position: relative; top: 3px; background-position: 0px -46px; }
+.fromNetwork .logos.fitwell { width: 60px; height: 20px; position: relative; top: 8px; background-position: -76px -48px; }
+.fromNetwork .logos.jenite { width: 60px; height: 20px; position: relative; top: 8px; background-position: -148px -48px; }
+.fromNetwork .logos.div { width: 51px; height: 26px; position: relative; top: 3px; background-position: -224px -48px; }
+.fromNetwork .often-tabs .item { margin: 0px 9px; }
+.fromNetwork .list .item { margin-bottom: 15px; }
+.fromNetwork .list .item span { color: rgb(153, 153, 153); font-size: 10px; }
+.likeFb, .likeGplus { float: left; position: relative; }
+.likeFb iframe { width: 121px !important; }
+.likeGplus { top: 2px; }
+.moreRecipes .item.last { margin-right: 0px; }
+.breadCrumbs { margin-bottom: 15px; font-size: 12px; }
+.breadCrumbs, .breadCrumbs a { color: rgb(119, 102, 84); }
+.addTooltip, .tooltipArrow { display: none; white-space: nowrap; }
+#recipeDifficulty:hover .addTooltip, #recipeDifficulty:hover .tooltipArrow, .removeCooker .deleteBtn:hover .addTooltip, .removeCooker .deleteBtn:hover .tooltipArrow, .volumeResultt:hover .addTooltip, .volumeResultt:hover .tooltipArrow { display: block; }
+.addTooltip { position: absolute; right: 13px; bottom: 27px; border: 1px solid rgb(206, 206, 206); background: rgb(250, 247, 220) none repeat scroll 0% 0%; padding: 6px; font-size: 12px; color: rgb(102, 102, 102); }
+.tooltipArrow { background: rgba(0, 0, 0, 0) url("tooltipArrow.png") no-repeat scroll 0px 0px; width: 7px; height: 8px; position: absolute; right: 13px; bottom: 20px; }
+#recipeDifficulty { position: relative; }
+.milka2 .addTooltip, .milka2 .tooltipArrow { right: 37px; }
+.products .item { overflow: hidden; }
+.productItem, .productName { display: block; float: left; }
+.productItem { width: 60px; }
+.productItem { margin-right: 15px; width: 52px; }
+.productName { width: 120px; }
+.topBanner { text-align: center; margin-bottom: 20px; }
+.rightCol .bannerWrap { margin-bottom: 30px; }
+.bannerWrap { text-align: center; }
+#nav { display: inline-block; }
+.recipeHolder h1 { display: inline-block; }
+.footer-above { background: rgb(246, 244, 234) none repeat scroll 0% 0%; border-top: 1px solid rgb(225, 224, 204); padding-top: 19px; padding-bottom: 18px; text-align: center; overflow: hidden; }
+.footer-above ul { display: inline-block; }
+.footer-above li { float: left; width: 120px; }
+.footer-above li span { display: block; background: rgba(0, 0, 0, 0) url("footer-icons.png") no-repeat scroll center 0px; height: 44px; width: 45px; margin: 0px auto 6px; border-radius: 23px; transition: all 0.3s ease-out 0s; }
+.footerMobile a:hover span { background-position: center -50px; }
+.footerRss a span { background-position: center -100px; }
+.footerRss a:hover span { background-position: center -150px; }
+.footerFb a span { background-position: center -200px; }
+.footerFb a:hover span { background-position: center -250px; }
+.footerContacts a span { background-position: center -300px; }
+.footerContacts a:hover span { background-position: center -350px; }
+.footer-above li a { display: block; text-transform: uppercase; font-size: 11px; font-weight: 700; color: rgb(143, 129, 115); text-decoration: none; }
+.dib { display: inline-block; }
+.slideNoteBanner { position: fixed; right: 0px; bottom: 0px; visibility: hidden; z-index: 20000; }
+.slideNoteBanner.opened { overflow: visible !important; }
+.beforeComments .left { float: left; width: 300px; }
+.beforeComments .right { float: right; width: 300px; }
+.slider-wrap { overflow: hidden; }
+.slider-1 .sliderList li, .slider-6 .sliderList li { float: left; width: 660px; height: 372px; line-height: 372px; text-align: center; position: relative; }
+.slider-1 .sliderList li img, .slider-1 .sliderList li a, .slider-6 .sliderList li img, .slider-6 .sliderList li a { vertical-align: middle; }
+.slider-1 .sliderList, .slider-6 .sliderList { margin-bottom: 10px; }
+.slider-1 .sliderList li .info, .slider-6 .sliderList li .info { display: none; height: auto; line-height: 1; text-align: left; }
+.slider-2 .sliderList li, .slider-7 .sliderList li { float: left; width: 100px; height: 56px; margin-right: 12px; text-align: center; position: relative; overflow: hidden; cursor: pointer; }
+.slider-2 .sliderList li span, .slider-7 .sliderList li span { position: absolute; left: 0px; top: 0px; width: 94px; height: 50px; overflow: hidden; }
+.slider-2 .sliderList li.selected span, .slider-7 .sliderList li.selected span { border: 3px solid rgb(255, 162, 0); }
+.box-aromaWisdom, .box-bullShits, .box-funPhoto, .box-funVideo { width: 300px; margin: 0px auto; }
+.box-aromaWisdom .text, .box-bullShits .text { margin-bottom: 15px; font-family: Georgia,Times,times new roman,serif; font-size: 14px; font-style: italic; color: rgb(102, 102, 102); }
+.rightCol .box-aromaWisdom .text { margin-bottom: 25px; }
+.icon-photo, .icon-video { background: rgba(0, 0, 0, 0) url("sprite.png") no-repeat scroll -730px -192px; width: 45px; height: 45px; position: absolute; left: 0px; top: 0px; }
+.icon-video { background-position: -775px -192px; }
+.icon-video.small { background-position: -855px -192px; width: 35px; height: 35px; }
+li.clear { background: rgba(0, 0, 0, 0) none repeat scroll 0px center !important; float: none !important; padding: 0px !important; margin: 0px !important; height: 0px !important; font-size: 0px !important; width: 100% !important; border: medium none !important; }
+.imageSource, .imageSource a { color: rgb(153, 153, 153); }
+.savagesWisdom .icon-1, .savagesWisdom-right .icon-1 { width: 86px; height: 58px; }
+.savagesJokesCommon .icon-1, .savagesWisdom-right .icon-1, .savagesBullShits-right .icon-1, .savagesJokesCommon .icon-2 { background: rgba(0, 0, 0, 0) url("savagesSprite.png") no-repeat scroll 0px -170px; left: -10px; bottom: -5px; position: absolute; }
+.savagesBullShits .icon-1, .savagesBullShits-right .icon-1 { background-position: 0px -230px; width: 89px; height: 68px; left: auto; right: -10px; }
+.savagesCommon-right { position: relative; }
+.rightCol .savagesCommon-right .boxContent { padding-top: 0px; }
+.savagesCommon-right .box-aromaWisdom, .savagesCommon-right .box-bullShits { width: 260px; }
+.savagesWisdom-right .icon-1 { bottom: 0px; }
+.savagesBullShits-right .icon-1 { right: -4px; top: -23px; }
+.slider-5 { overflow: hidden; }
+.slider-5 .sliderList li { float: left; width: 300px; overflow: hidden; }
+.box-funVideo-right .thumbHolder { width: 300px; height: 169px; line-height: 169px; border: medium none; text-align: center; }
+.box-funVideo-right .thumbHolder img { vertical-align: middle; }
+.box-funPhoto-right .slider-6 .sliderList li { width: 300px; height: 169px; line-height: 169px; }
+.box-funPhoto-right .slider-6 .sliderList li .info .padd { padding: 8px 20px; }
+.box-funPhoto-right .recipeOfTheDayTitle { font-size: 14px; }
+.box-funPhoto-right .slider-7 .sliderList li { width: 93px; height: 52px; margin-right: 10px; }
+.box-funPhoto-right .slider-7 .sliderList li span { width: 87px; height: 46px; margin-right: 10px; }
+.no-time-to-cook-main .some-list li:first-child, .no-time-to-cook-list .inner-list .item:first-child, .right-no-time-to-cook li:first-child { margin-left: 0px; }
+.no-time-heading-right { background: rgba(0, 0, 0, 0) url("heading-small.png") no-repeat scroll 0px 0px; }
+.right-no-time-to-cook li { float: left; width: 80px; margin-left: 10px; }
+.right-no-time-to-cook li .thumbHolder { width: 78px; height: 58px; overflow: hidden; }
+.bgCuisine .header { background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px; }
+@font-face {
+  font-family: "ptserif";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Serif"), local("PTSerif-Regular"), url("PTserif.eot") format("embedded-opentype"), url("PTserif.woff") format("woff");
+}
+@font-face {
+  font-family: "ptserif";
+  font-style: normal;
+  font-weight: 700;
+  src: local("PT Serif Bold"), local("PTSerif-Bold"), url("PTserifBold.eot") format("embedded-opentype"), url("PTserifBold.woff") format("woff");
+}

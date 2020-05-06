@@ -1,0 +1,37 @@
+/* Code tidied up by ScrapBook */
+@supports (-ms-ime-align: auto) {
+  ._3eqz ._44ae ._6m3 { flex: 1 1 0%; max-width: 95%; width: 45%; }
+}
+@keyframes ufiLinkSutroBounceAnimationPartOne {
+0% { transform: scale(1) rotate(0deg); }
+100% { transform: scale(1.24) rotate(-8deg); }
+}
+@keyframes ufiLinkSutroBounceAnimationPartTwo {
+0% { transform: scale(1.24) rotate(-8deg); }
+100% { transform: scale(1) rotate(0deg); }
+}
+a.uiLinkSubtle { color: rgb(144, 148, 156); }
+.UFIMentionsInputWrap, .UFICommentContainer, .UFIInputContainer { position: relative; }
+.UFICommentAttachmentButtons { bottom: 0px; height: 24px; position: absolute; right: 0px; }
+.UFICommentActorName { font-weight: 600; white-space: nowrap; }
+@keyframes ec9uwl0u-B {
+0% { opacity: 0; }
+50% { opacity: 1; }
+100% { opacity: 0; }
+}
+@keyframes gb7y48ee-B {
+0% { opacity: 0.5; }
+50% { opacity: 1; }
+100% { opacity: 0.5; }
+}
+@keyframes s3vrvo01-B {
+0% { opacity: 0; }
+50% { opacity: 0.75; }
+100% { opacity: 0; }
+}
+@media only screen and (min-resolution: 2dppx) {
+}
+@media only screen and (min-resolution: 2dppx) {
+}
+._2pi3 { padding-bottom: 8px; padding-top: 8px; }
+._2pi8 { padding-left: 8px; padding-right: 8px; }
